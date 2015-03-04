@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController<UITextFieldDelegate>
+@property (strong,nonatomic) IBOutlet NSString *labelText;
+@property (strong, nonatomic) IBOutlet UILabel *label;
+@property (strong, nonatomic) IBOutlet UILabel *coding;
+@property (strong, nonatomic) IBOutlet UIView *vw;
 
 @end
 
